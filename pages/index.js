@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Leyout from "../components/Leyout";
-
+import { Skills, Experince } from "../profile.js";
 const index = () => {
   return (
     <>
@@ -36,21 +36,48 @@ const index = () => {
           </div>
         </header>
         {/**Secund section */}
-        <div class="row py-2">
-          <div class="col-md-4">
-            <div class="card bg-light">
-              <div class="card-body">
+        <div className="row py-2">
+          <div className="col-md-4">
+            <section className="card bg-light">
+              <div className="card-body">
                 <h2>Skills</h2>
+                {Skills.map(({ Skill, percentage }, i) => (
+                  <div className="py-3" key={i}>
+                    <h5>{Skill}</h5>
+                    <div className="progress">
+                      <div
+                        className="progress-bar progress-bar-striped progress-bar-animated"
+                        role="progressbar"
+                        aria-label="Animated striped example"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style={{ width: `${percentage}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
               </div>
-            </div>
+            </section>
           </div>
-          <div class="col-md-8">
-            <div class="card bg-light">
-              <div class="card-body">
+          <section className="col-md-8">
+            <div className="card bg-light">
+              <div className="card-body">
                 <h2>Experince</h2>
+                <ul>
+                  {Experince.map(({ title, description, from, to }, index) => (
+                    <li key={index}>
+                      <h3>{title}</h3>
+                      <h5>
+                        {from}-{to}
+                      </h5>
+                      <p>{description}</p>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </Leyout>
     </>
