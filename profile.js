@@ -47,3 +47,30 @@ export const Experince = [
     to: 2022,
   },
 ];
+
+export const projects = [
+  {
+    name: "sngel pages aplicacion",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestiae quasi, a voluptates fugit reiciendis praesentium repellendus quo deserunt expedita consequuntur tempore, iure autem veritatis. Amet officiis ad voluptas illum.",
+    images: "proyect-1.jpg",
+  },
+  {
+    name: "sngel pages aplicacion",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestiae quasi, a voluptates fugit reiciendis praesentium repellendus quo deserunt expedita consequuntur tempore, iure autem veritatis. Amet officiis ad voluptas illum.",
+    images: "proyect-2.jpg",
+  },
+  {
+    name: "sngel pages aplicacion",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestiae quasi, a voluptates fugit reiciendis praesentium repellendus quo deserunt expedita consequuntur tempore, iure autem veritatis. Amet officiis ad voluptas illum.",
+    images: "proyect-3.jpg",
+  },
+  {
+    name: "sngel pages aplicacion",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestiae quasi, a voluptates fugit reiciendis praesentium repellendus quo deserunt expedita consequuntur tempore, iure autem veritatis. Amet officiis ad voluptas illum.",
+    images: "proyect-1.jpg",
+  },
+];

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Leyout from "../components/Leyout";
-import { Skills, Experince } from "../profile.js";
+import { Skills, Experince, projects } from "../profile.js";
 const index = () => {
   return (
     <>
@@ -79,6 +79,49 @@ const index = () => {
             </div>
           </section>
         </div>
+        {/**section for proyects */}
+        <section className="row">
+          <article className="col-md-12">
+            <div className="card card-body bg-dark">
+              <div className="row">
+                <div className="col-md-12">
+                  <h2 className="text-center text-light">Porfolio</h2>
+                </div>
+                {projects.map(({ name, description, images }, i) => (
+                  <div class="col-md-4 py-2">
+                    <div
+                      className="card h-100"
+                      style={{ width: "18rem" }}
+                      key={i}
+                    >
+                      <div className="overflow">
+                        <img
+                          src={images}
+                          className="card-img-top"
+                          alt="projects"
+                        />
+                      </div>
+
+                      <div className="card-body">
+                        <h5 className="card-title">{name}</h5>
+                      </div>
+                      <p className="card-text">{description}</p>
+
+                      <div className="card-body">
+                        <a href="#" className="card-link">
+                          Github
+                        </a>
+                        <a href="#" className="card-link">
+                          Website
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </article>
+        </section>
       </Leyout>
     </>
   );

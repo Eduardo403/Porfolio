@@ -29,13 +29,18 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/blog" legacyBehavior>
-                <a className="nav-link">Blog</a>
+              <Link href="/abaut" legacyBehavior>
+                <a className="nav-link">Abaut</a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/github" legacyBehavior>
                 <a className="nav-link">Github</a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="/contact" legacyBehavior>
+                <a className="nav-link">Contact</a>
               </Link>
             </li>
           </ul>
