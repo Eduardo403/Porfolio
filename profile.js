@@ -54,23 +54,33 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestiae quasi, a voluptates fugit reiciendis praesentium repellendus quo deserunt expedita consequuntur tempore, iure autem veritatis. Amet officiis ad voluptas illum.",
     images: "proyect-1.jpg",
+    github: "https://github.com/",
+    website: "https://github.com/",
   },
   {
     name: "sngel pages aplicacion",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestiae quasi, a voluptates fugit reiciendis praesentium repellendus quo deserunt expedita consequuntur tempore, iure autem veritatis. Amet officiis ad voluptas illum.",
     images: "proyect-2.jpg",
+    github: "https://github.com/",
+    website: "https://github.com/",
   },
   {
     name: "sngel pages aplicacion",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestiae quasi, a voluptates fugit reiciendis praesentium repellendus quo deserunt expedita consequuntur tempore, iure autem veritatis. Amet officiis ad voluptas illum.",
     images: "proyect-3.jpg",
+    github: "https://github.com/",
+    website: "https://github.com/",
   },
   {
     name: "sngel pages aplicacion",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestiae quasi, a voluptates fugit reiciendis praesentium repellendus quo deserunt expedita consequuntur tempore, iure autem veritatis. Amet officiis ad voluptas illum.",
     images: "proyect-1.jpg",
+    github: "https://github.com/",
+    website: "https://github.com/",
   },
 ];
+export const es = [];
+export const en = [];

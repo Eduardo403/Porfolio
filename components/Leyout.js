@@ -1,6 +1,21 @@
+import { useRouter } from "next/router.js";
+import { useEffect } from "react";
 import Navbar from "./Navbar.js";
+import nProgress from "nprogress";
 
 const Leyout = ({ children }) => {
+  const router = useRouter();
+  useEffect(() => {
+    const handelRouterChange = (url) => {
+      nProgress.start();
+    };
+    router.events.on("routeChangeStart", handelRouterChange);
+    router.events.on("routeChangeComplete", () => nProgress.done());
+    return () => {
+      router.events.off("routeChangeStart", handelRouterChange);
+    };
+  }, []);
+
   return (
     <>
       <Navbar />

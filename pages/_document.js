@@ -5,6 +5,10 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.css"
+        />
         <NextSeo
           title="Eduardo-Hernandez | Porfolio"
           description="this is my porfolio page "

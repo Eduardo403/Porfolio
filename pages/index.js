@@ -87,37 +87,39 @@ const index = () => {
                 <div className="col-md-12">
                   <h2 className="text-center text-light">Porfolio</h2>
                 </div>
-                {projects.map(({ name, description, images }, i) => (
-                  <div class="col-md-4 py-2">
-                    <div
-                      className="card h-100"
-                      style={{ width: "18rem" }}
-                      key={i}
-                    >
-                      <div className="overflow">
-                        <img
-                          src={images}
-                          className="card-img-top"
-                          alt="projects"
-                        />
-                      </div>
+                {projects.map(
+                  ({ name, description, images, github, website }, i) => (
+                    <div class="col-md-4 py-2" key={i}>
+                      <div
+                        className="card h-100"
+                        style={{ width: "18rem" }}
+                        key={i}
+                      >
+                        <div className="overflow">
+                          <img
+                            src={images}
+                            className="card-img-top"
+                            alt="projects"
+                          />
+                        </div>
 
-                      <div className="card-body">
-                        <h5 className="card-title">{name}</h5>
-                      </div>
-                      <p className="card-text">{description}</p>
+                        <div className="card-body">
+                          <h5 className="card-title">{name}</h5>
+                        </div>
+                        <p className="card-text">{description}</p>
 
-                      <div className="card-body">
-                        <a href="#" className="card-link">
-                          Github
-                        </a>
-                        <a href="#" className="card-link">
-                          Website
-                        </a>
+                        <div className="card-body">
+                          <a href={github} className="card-link">
+                            Github
+                          </a>
+                          <a href={website} className="card-link">
+                            Website
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  )
+                )}
               </div>
             </div>
           </article>
