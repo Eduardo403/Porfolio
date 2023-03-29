@@ -83,4 +83,3 @@ export const projects = [
   },
 ];
 export const es = [];
-export const en = [];
