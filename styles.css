@@ -10,3 +10,39 @@
 .overflow .card-img-top:hover {
   transform: scale(1.8);
 }
+.contact {
+  max-width: 1024px;
+  margin: 1rem auto;
+  align-items: center;
+  text-align: center;
+}
+
+.contact h2 {
+  margin: 1rem auto;
+  font-size: 4.6vh;
+  width: 40%;
+  border-bottom: 1px solid var(--frst-color);
+}
+.contact-cart {
+  margin: 1rem auto;
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 144px;
+}
+
+.contact-cart a {
+  text-decoration: none;
+}
+.social svg {
+  width: 5.5vh;
+  height: 5.5vh;
+  padding: 0.2rem;
+}
+.contact-cart > svg {
+  width: 6.8vh;
+  height: 6.8vh;
+}
