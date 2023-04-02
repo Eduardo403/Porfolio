@@ -5,7 +5,6 @@ const blog = () => {
     <>
       <Leyout>
         <section id="contact" class="contact">
-          <h2>Contact</h2>
           <article class="conteiner-contact-cart">
             <aside class="box-shadow-1 contact-cart">
               <svg

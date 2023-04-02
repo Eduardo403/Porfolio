@@ -16,6 +16,10 @@
   align-items: center;
   text-align: center;
 }
+.conteiner-contact-cart {
+  display: flex;
+  flex-direction: column;
+}
 
 .contact h2 {
   margin: 1rem auto;
@@ -45,4 +49,10 @@
 .contact-cart > svg {
   width: 6.8vh;
   height: 6.8vh;
+}
+
+@media (min-width: 768px) {
+  .conteiner-contact-cart {
+    flex-direction: row;
+  }
 }
