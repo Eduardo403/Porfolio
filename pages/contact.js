@@ -26,7 +26,7 @@ const contact = () => {
 
             <div class="form-group">
               <label for="matter" class="form-label mt-4">
-                matter to be discussed
+                Matter
               </label>
               <input
                 type="text"
@@ -57,7 +57,7 @@ const contact = () => {
 
             <div class="form-group">
               <label for="exampleTextarea" class="form-label mt-4">
-                Example textarea
+                text
               </label>
               <textarea
                 class="form-control"

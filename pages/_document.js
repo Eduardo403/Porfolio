@@ -35,7 +35,7 @@ export default function Document() {
           }}
         />
 
-        <title>My porfolio</title>
+        <title>Eduardo-hernandez</title>
       </Head>
       <body>
         <Main />
