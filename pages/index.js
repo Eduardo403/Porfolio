@@ -122,10 +122,20 @@ const index = () => {
                         <p className="card-text">{description}</p>
 
                         <div className="card-body">
-                          <a href={github} className="card-link">
+                          <a
+                            href={github}
+                            className="card-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             Github
                           </a>
-                          <a href={website} className="card-link">
+                          <a
+                            href={website}
+                            className="card-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             Website
                           </a>
                         </div>

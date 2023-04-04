@@ -54,28 +54,28 @@ export const Experince = [
 
 export const projects = [
   {
-    name: "sngel pages aplicacion",
+    name: "Rescountrie",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestiae quasi, a voluptates fugit reiciendis praesentium repellendus quo deserunt expedita consequuntur tempore, iure autem veritatis. Amet officiis ad voluptas illum.",
-    images: "proyect-1.jpg",
-    github: "https://github.com/",
-    website: "https://github.com/",
-  },
-  {
-    name: "sngel pages aplicacion",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestiae quasi, a voluptates fugit reiciendis praesentium repellendus quo deserunt expedita consequuntur tempore, iure autem veritatis. Amet officiis ad voluptas illum.",
-    images: "proyect-2.jpg",
-    github: "https://github.com/",
-    website: "https://github.com/",
-  },
-  {
-    name: "sngel pages aplicacion",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestiae quasi, a voluptates fugit reiciendis praesentium repellendus quo deserunt expedita consequuntur tempore, iure autem veritatis. Amet officiis ad voluptas illum.",
+      "in this project i use react  for create a page where you can't see the data for all country like their flags , capital and many data more , this page get the data  to  API rescountrie ,use fetch ,useState,UseEfect,context and many more",
     images: "proyect-3.jpg",
-    github: "https://github.com/",
-    website: "https://github.com/",
+    github: "https://github.com/Eduardo403/countrie",
+    website: "https://eduardo403.github.io/countrie/",
+  },
+  {
+    name: "Short URL",
+    description:
+      "this page was create only using HTML5 ,CSS and Vanilla.js ,in this you can shorten url to hide the domain or is more easy to share a link,use a 100% handmade cascading style sheet",
+    images: "proyect-1.jpg",
+    github: "https://github.com/Eduardo403/Shortly",
+    website: "https://eduardo403.github.io/Shortly/",
+  },
+  {
+    name: "Easybank landing page",
+    description:
+      "laying page with a lite vanilla.js everything else is done with HTML5 cascading style sheet(CSS),this page is perfect for small businesses that want to have an internet presence",
+    images: "proyect-2.jpg",
+    github: "https://github.com/Eduardo403/Easybank",
+    website: "https://eduardo403.github.io/Easybank/",
   },
   {
     name: "sngel pages aplicacion",
