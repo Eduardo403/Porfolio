@@ -35,6 +35,10 @@ export const Skills = [
     Skill: "Git",
     percentage: 92,
   },
+  {
+    Skill: "Express.js",
+    percentage: 70,
+  },
 ];
 
 export const Experince = [
