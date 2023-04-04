@@ -22,10 +22,23 @@ const index = () => {
                   <h1>Eduardo Hernandez</h1>
                   <h3>Web Developer</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Aut, molestiae aliquid. Laboriosam voluptatum libero dolore
-                    vel, consectetur rerum fugiat cupiditate velit, illo
-                    sapiente eos laborum quis! Expedita dolore vitae nam!
+                    and I am a passionate programmer with two years of
+                    experience in the technology industry. My main focus is web
+                    application development using technologies like node.js ,
+                    next.js , SQL , vanilla.js. In addition, I have a solid
+                    experience in database design and development, system
+                    integration . I love working on challenging projects and am
+                    always looking to learn new skills to improve my work. I am
+                    a proactive and self-directed person, which allows me to
+                    work effectively both individually and in a team. In
+                    addition, I am always willing to share my knowledge and
+                    experience with other team members to ensure the success of
+                    the project. In my free time, I like to attend programming
+                    events, where I can meet other programmers and keep up with
+                    the latest trends and technologies. I also enjoy reading
+                    articles on programming. If you are interested in my work,
+                    do not hesitate to contact me. I am looking forward to
+                    working on exciting new projects!
                   </p>
                   <Link href="/contact" legacyBehavior>
                     <a className="btn btn-light">Hire me</a>
