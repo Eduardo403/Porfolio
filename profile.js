@@ -43,10 +43,10 @@ export const Skills = [
 
 export const Experince = [
   {
-    title: "engineri in red and system",
+    title: "System engineer ",
 
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestiae quasi, a voluptates fugit reiciendis praesentium repellendus quo deserunt expedita consequuntur tempore, iure autem veritatis. Amet officiis ad voluptas illum.",
+      "I worked as a server and network administrator of which the last 3 years I was a team leader where I implemented new technology such as node js on the server side and react on the client",
     from: 2012,
     to: 2022,
   },
