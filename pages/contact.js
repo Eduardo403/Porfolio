@@ -9,9 +9,15 @@ let initeData = {
 const contact = () => {
   const [data, setData] = useState(initeData);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!data.matter && !data.email && !data.message) {
+      window.alert("messing data");
+    }
     alert(
       "Thank you for contacting us. We will get back to you as soon as possible."
     );
@@ -25,7 +31,7 @@ const contact = () => {
             <legend>contact me</legend>
 
             <div class="form-group">
-              <label for="matter" class="form-label mt-4">
+              <label htmlFor="matter" class="form-label mt-4">
                 Matter
               </label>
               <input
@@ -33,13 +39,15 @@ const contact = () => {
                 class="form-control"
                 id="matter"
                 aria-describedby="emailHelp"
+                name="matter"
                 placeholder="matter"
                 required
+                onChange={handleChange}
               />
             </div>
 
             <div class="form-group">
-              <label for="exampleInputEmail1" class="form-label mt-4">
+              <label htmlFor="exampleInputEmail1" class="form-label mt-4">
                 Email address
               </label>
               <input
@@ -48,6 +56,8 @@ const contact = () => {
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 placeholder="Enter email"
+                onChange={handleChange}
+                name="email"
                 required
               />
               <small id="emailHelp" class="form-text text-muted">
@@ -64,16 +74,18 @@ const contact = () => {
                 id="exampleTextarea"
                 rows="3"
                 required
+                name="message"
+                onChange={handleChange}
               ></textarea>
             </div>
             <hr />
-            <button
+
+            <input
               type="submit"
+              value="Submit"
               class="btn btn-primary"
               onSubmit={handleSubmit}
-            >
-              Submit
-            </button>
+            />
           </fieldset>
         </form>
         <section id="contact" class="contact ">
