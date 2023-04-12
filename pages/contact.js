@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Leyout from "../components/Leyout.js";
 let initeData = {
   matter: "",
@@ -14,19 +14,12 @@ const contact = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (!data.matter && !data.email && !data.message) {
-      window.alert("messing data");
-    }
-    alert(
-      "Thank you for contacting us. We will get back to you as soon as possible."
-    );
-    // setData({ ...data, [e.target.name]: e.target.value });
   };
+
   return (
     <>
       <Leyout>
-        <form>
+        <form onSubmit={handleSubmit}>
           <fieldset>
             <legend>contact me</legend>
 
