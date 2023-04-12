@@ -12,8 +12,18 @@ const contact = () => {
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    let res = await fetch("https://formsubmit.co/ajax/edua.24h@gmail.com", {
+      method: "POST",
+      body: new FormData(e.target),
+    });
+    if (res.status != 200) {
+      console.log("Failed to submit");
+    } else {
+      console.log(res);
+    }
   };
 
   return (
