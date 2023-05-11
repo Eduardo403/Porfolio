@@ -4,6 +4,10 @@ export const Skills = [
     percentage: 90,
   },
   {
+    Skill: "java",
+    percentage: 40,
+  },
+  {
     Skill: "React.js",
     percentage: 80,
   },
