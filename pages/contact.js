@@ -1,103 +1,16 @@
 import { useState } from "react";
 import Leyout from "../components/Leyout.js";
-let initeData = {
-  matter: "",
-  email: "",
-  message: "",
-};
+
 
 const contact = () => {
-  const [data, setData] = useState(initeData);
-
-  const handleChange = (e) => {
-    setData({ ...data, [e.target.name]: e.target.value });
-  };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!data.matter || !data.email || !data.message)
-      console.log("someting data is messing");
-
-    let res = await fetch("https://formsubmit.co/ajax/edua.24h@gmail.com", {
-      method: "POST",
-      body: new FormData(e.target),
-    });
-    if (res.status != 200) {
-      console.log("Failed to submit");
-      setData(initeData);
-    } else {
-      console.log(res);
-      setData(initeData);
-    }
-  };
+ 
+   
+  
 
   return (
     <>
       <Leyout>
-        <form onSubmit={handleSubmit}>
-          <fieldset>
-            <legend>contact me</legend>
-
-            <div className="form-group">
-              <label htmlFor="matter" className="form-label mt-4">
-                Matter
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="matter"
-                aria-describedby="emailHelp"
-                name="matter"
-                placeholder="matter"
-                required
-                onChange={handleChange}
-                value={data.matter}
-              />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="exampleInputEmail1" className="form-label mt-4">
-                Email address
-              </label>
-              <input
-                type="email"
-                className="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Enter email"
-                onChange={handleChange}
-                name="email"
-                value={data.email}
-                required
-              />
-              <small id="emailHelp" className="form-text text-muted">
-                We'll never share your email with anyone else.
-              </small>
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="exampleTextarea" className="form-label mt-4">
-                text
-              </label>
-              <textarea
-                className="form-control"
-                id="exampleTextarea"
-                rows="3"
-                required
-                name="message"
-                onChange={handleChange}
-                value={data.message}
-              ></textarea>
-            </div>
-            <hr />
-
-            <input
-              type="submit"
-              value="Submit"
-              className="btn btn-primary"
-              onSubmit={handleSubmit}
-            />
-          </fieldset>
-        </form>
+        
         <section id="contact" className="contact ">
           <article className="conteiner-contact-cart">
             <aside className="box-shadow-1 contact-cart">
