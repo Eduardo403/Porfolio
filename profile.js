@@ -51,7 +51,7 @@ export const Experince = [
 
     description:
       "I worked as a server and network administrator of which the last 3 years I was a team leader where I implemented new technology such as node js on the server side and react on the client",
-    from: 2012,
+    from: 2019,
     to: 2022,
   },
 ];
@@ -82,12 +82,12 @@ export const projects = [
     website: "https://eduardo403.github.io/Easybank/",
   },
   {
-    name: "sngel pages aplicacion",
+    name: "single pages aplicacion",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, molestiae quasi, a voluptates fugit reiciendis praesentium repellendus quo deserunt expedita consequuntur tempore, iure autem veritatis. Amet officiis ad voluptas illum.",
+      "this page is perfect for a little business who wants have a presence in internet and a means to contact it is made with HTML ,CSS and Vanilla Js",
     images: "proyect-1.jpg",
-    github: "https://github.com/",
-    website: "https://github.com/",
+    github: "https://github.com/Eduardo403/Easybank",
+    website: "https://eduardo403.github.io/Easybank/",
   },
 ];
 export const es = [];
